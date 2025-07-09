@@ -13,13 +13,13 @@ int CapturarEntero(const char solicitud[])
     cout << solicitud;
     cin >> x;
     while(cin.fail() || x != (int)x){
-        cout << "Error: valor no v\240lido";
+        cout << "Error: valor no valido";
         if(cin.fail()){
-            cout << ", se espera un n\243mero" << endl;
+            cout << ", se espera un numero" << endl;
             cin.clear();
             cin.ignore(numeric_limits<int>::max(),'\n');
         }else{
-            cout << ", se espera un n\243mero entero" << endl;
+            cout << ", se espera un numero entero" << endl;
         }
         cout << solicitud;
         cin >> x;
